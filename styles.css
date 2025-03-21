@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+}
+
+footer {
+  background-color: #5f8c78;
+  color: #333;
+  padding: 40px 80px;
+  text-align: left;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.newsletter {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input-container input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.input-container button {
+  background-color: #d17652;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-links div {
+  min-width: 150px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #936f50;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  width: 150px;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter {
+    text-align: center;
+  }
+
+  .input-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .input-container input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-divider {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
